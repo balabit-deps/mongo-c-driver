@@ -1,5 +1,6 @@
 name: mongo-c-driver 
 builder:
+  configure_options: --disable-man-pages
   name: AutotoolsBuilder
   environments:
     NOCONFIGURE: "1"

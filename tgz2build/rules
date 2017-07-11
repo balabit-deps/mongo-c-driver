@@ -12,7 +12,7 @@ $(STAMPDIR)/stamp-setup:
 
 configure: $(STAMPDIR)/stamp-configure
 $(STAMPDIR)/stamp-configure: $(STAMPDIR)/stamp-setup
-	./configure --prefix="${ZBS_PREFIX}"
+	./configure --prefix="${ZBS_PREFIX}" --disable-man-pages
 	touch $@
 
 build: $(STAMPDIR)/stamp-build
