@@ -14,7 +14,6 @@ endif
 
 AM_CTAGSFLAGS = --fields=+l --languages=c
 
-include doc/Makefile.am
 include src/Makefile.am
 
 if ENABLE_TESTS
@@ -29,7 +28,7 @@ endif
 include build/cmake/Makefile.am
 
 ACLOCAL_AMFLAGS = -I build/autotools/m4 ${ACLOCAL_FLAGS}
-DISTCHECK_CONFIGURE_FLAGS = --enable-silent-rules --enable-man-pages --enable-html-docs --enable-sasl --enable-ssl --enable-maintainer-flags --enable-debug --with-libbson=bundled
+DISTCHECK_CONFIGURE_FLAGS = --enable-silent-rules --enable-sasl --enable-ssl --enable-maintainer-flags --enable-debug --with-libbson=bundled
 
 mongocdocdir = ${docdir}
 mongocdoc_DATA = \
