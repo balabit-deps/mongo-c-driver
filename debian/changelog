@@ -1,0 +1,6 @@
+libmongoc (1.4.0-1.syslogng70.0) syslogng70; urgency=medium
+
+	* import libmongoc
+
+-- Laszlo Budai <laszlo.budai@balabit.com>  Tue, 11 Jul 2017 13:02:32 +0200
+

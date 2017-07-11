@@ -1,0 +1,16 @@
+Source: mongo-c-driver
+Section: libdevel
+Priority: extra
+Maintainer: syslog-ng developers <syslog-ng@lists.balabit.hu>
+Build-depends: pkg-config
+Standards-Version: 3.6.1
+
+Package: mongo-c-driver
+Architecture: amd64
+Depends: ${shlibs:Depends}
+Description: mongo-c-driver
+
+Package: mongo-c-driver-dbg
+Architecture: amd64
+Depends: libmmongoc
+Description: Debug symbols for mongo-c-driver
