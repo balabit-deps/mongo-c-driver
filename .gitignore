@@ -14,7 +14,6 @@ cluster1
 CMakeCache.txt
 CMakeFiles
 compile
-config.*
 configure
 COPYING
 data
