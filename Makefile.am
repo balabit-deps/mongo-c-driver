@@ -15,12 +15,6 @@ endif
 AM_CTAGSFLAGS = --fields=+l --languages=c
 
 include doc/Makefile.am
-if ENABLE_MAN_PAGES
-include doc/man/Makefile.am
-endif
-if ENABLE_HTML_DOCS
-include doc/html/Makefile.am
-endif
 include src/Makefile.am
 
 if ENABLE_TESTS
