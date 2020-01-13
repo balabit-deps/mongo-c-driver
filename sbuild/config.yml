@@ -1,0 +1,10 @@
+name: mongo-c-driver
+builder:
+  name: CMakeBuilder
+  configure_options: -DENABLE_BSON=ON -DENABLE_SSL=OPENSSL
+
+  # complicated release version generation: calc_release_version.py, RELEASE_TAG_RE does not match our tags
+  flags: "no-make-dist"
+platforms:
+  - linux-glibc2.11/amd64
+  - ubuntu-bionic/amd64
