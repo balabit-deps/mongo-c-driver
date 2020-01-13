@@ -349,11 +349,11 @@ if (ENABLE_MONGOC)
          ${ALL_DIST} ${dist_generated_depends}
    )
 
-   if (ENABLE_BSON MATCHES "ON|AUTO" AND ENABLE_MAN_PAGES STREQUAL ON AND ENABLE_HTML_DOCS STREQUAL ON)
+   if (ENABLE_BSON MATCHES "ON|AUTO")
       # Since our 'dist' implementation does not add top-level targets for every
       # file to be included, we declare a dependency on the 'mongo-doc' target so
       # that documentation is built before the distribution tarball is generated.
-      add_custom_target (dist DEPENDS doc ${DIST_FILE})
+      add_custom_target (dist DEPENDS ${DIST_FILE})
 
       add_custom_target (distcheck DEPENDS dist
          COMMAND ${CMAKE_COMMAND}
