@@ -1,6 +1,5 @@
-mongo-c-driver (1.15.3-1.syslogng70.0) syslogng70; urgency=medium
+mongo-c-driver (1.15.3-2.syslogng70.0) syslogng70; urgency=medium
 
   * import mongo-c-driver
 
  -- Laszlo Varady <laszlo.varady@balabit.com>  Mon, 13 Jan 2020 15:40:29 +0100
-
