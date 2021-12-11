@@ -29,3 +29,6 @@ VERSION_RELEASED
 Debug
 install_manifest.txt
 x64
+
+sbuild/*
+!sbuild/config.yml

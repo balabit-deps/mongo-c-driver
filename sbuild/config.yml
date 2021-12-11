@@ -1,0 +1,4 @@
+name: mongo-c-driver
+builder:
+  name: CMakeBuilder
+  configure_options: -DENABLE_BSON=ON -DENABLE_SSL=OPENSSL
