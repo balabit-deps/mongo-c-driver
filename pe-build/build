@@ -1,5 +1,5 @@
 source="mongo-c-driver"
-version=1.15.3-pe-1
+version=1.15.3-pe-2
 dependencies=(
   'zlib' 'zlib-dev'
   'libssl' 'libssl-dev'
@@ -12,6 +12,7 @@ build() {
     -DCMAKE_BUILD_TYPE=RelWithDebInfo \
     -DENABLE_BSON=ON \
     -DENABLE_SSL=OPENSSL \
+    -DENABLE_AUTOMATIC_INIT_AND_CLEANUP=OFF \
     -DBUILD_VERSION=${version} \
     -S "${src_dir}" \
     -B "${build_dir}"
